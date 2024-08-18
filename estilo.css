@@ -1,0 +1,96 @@
+
+
+body {
+    background-image: url(rosa.jpg);
+    background-position: center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+} /*definindo imagem de fundo, sua posição, tamanho e sem repetir a imagem*/
+
+   
+.container{
+    margin: 0;
+}/*definindo margem 0*/
+
+nav{
+    text-align: center;
+} /*alinhando os textos em nav para o centro*/
+
+nav .logo{
+    font-size: 80px;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}/*definindo tamanho, estilo da fonte, cor, negrito para o logo (nicolly brasil)*/
+
+nav ul{
+    display: flex;
+    justify-content: center; 
+}/*utilizando flex para deixar o menu na horizontal*/
+
+nav ul li{
+    list-style: none;
+    padding: 20px;
+}/*retirando maracador de lista e definindo o espaço entre esse elemento e outro para 20px*/
+
+nav ul li a{
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(4, 10, 34);
+    border-radius: 30px;
+    transition: 0.7s;
+    background-color: rgb(254, 254, 254);
+}/*definindo o espaço entre esse elemento e outro para 20px(top e bottom) e 30px(left e right), retirando a marcação de link
+definindo o tamanho da fonte, cor, arredondando a borda, adicionando uma trasição e cor de fundo*/
+
+nav ul li a:hover{
+    background-color: rgb(175, 79, 177);
+    color: white;
+}/*cor de fundo e cor da fonte quando o cursor do mouse está sobre o menu*/
+
+
+.descricao{
+    padding: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(4, 10, 34);
+    border-radius: 30px;
+    transition: 0.7s;
+    background-color: rgb(254, 254, 254);
+    text-align: center;
+    margin: 100px;
+}/*espaço entre esse elemento e outro, retirando decorações de texto, tamanho da fonte, cor da fonte, arredondando a borda, transição,
+cor de fundo, alinhamento de texto, margem*/
+
+.contato ul li{
+    list-style: none;
+}/*retirando marcador de lista*/
+
+.portfolio a {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    margin: 80px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(4, 10, 34);
+    border-radius: 30px;
+    transition: 0.7s;
+    background-color: rgb(254, 254, 254);
+}/*segue o mesmo reciocínio do mmenu*/
+
+.portfolio a:hover{
+    background-color: rgb(175, 79, 177);
+    color: white;
+}
+
+form table{
+    display: flex;
+    justify-content: center;
+}/*centralizando o formulário*/
+
+form table th{
+    font-size: 20px;
+}/*tamanho da fonte*/
+
