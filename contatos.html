@@ -29,27 +29,16 @@
         <p>E-mail: nicollybrasil@hotmail.com</p>
         <br><br>
         <h4>Ou deixe seus dados para que eu entre em contato com você:</h4>
-        <form action="method=">
-            <table>
-                <tr>
-                    <th><label for="nome">Nome:</label></th>
-                    <td><input type="text" name="nome" id="nome"></td>
-                </tr>
-                <tr>
-                    <th><label for="email">E-mail:</label></th>
-                    <td><input type="email" name="email" id="email"></td>
-                </tr>
-                <br>
-                <tr>
-                    <th><label for="msg">Digite sua Mensagem:</label></th>
-                    <td><textarea name="msg" rows="5" cols="40">Digite sua mensagem</textarea></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td> <button>Enviar</button></td>
-                </tr>
-            </table>
-            </form>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
     </div>
 </body>
 </html>
