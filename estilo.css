@@ -5,7 +5,7 @@ body {
     background-position: center;
     background-size: 150%;
     background-repeat: no-repeat;
-} /*definindo imagem de fundo, sua posição, tamanho e sem repetir a imagem*/
+} /*definindo imagem de fundo, sua posição, tamanho e sem repetir a imagem e cobrindo toda a área*/
 
    
 .container{
@@ -17,7 +17,7 @@ nav{
 } /*alinhando os textos em nav para o centro*/
 
 nav .logo{
-    font-size: 80px;
+    font-size: 5rem;
     font-style: italic;
     color: rgb(255, 255, 255);
     font-weight: bold;
@@ -30,18 +30,18 @@ nav ul{
 
 nav ul li{
     list-style: none;
-    padding: 20px;
+    padding: 1.25rem;
 }/*retirando maracador de lista e definindo o espaço entre esse elemento e outro para 20px*/
 
 nav ul li a{
-    padding: 20px 30px;
+    padding: 1.25rem 1.875rem;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: rgb(4, 10, 34);
-    border-radius: 30px;
+    border-radius: 1.875rem;
     transition: 0.7s;
     background-color: rgb(254, 254, 254);
-}/*definindo o espaço entre esse elemento e outro para 20px(top e bottom) e 30px(left e right), retirando a marcação de link
+}/*definindo o espaço entre esse elemento e outro para 1.25rem(top e bottom) e 1.875(left e right), retirando a marcação de link
 definindo o tamanho da fonte, cor, arredondando a borda, adicionando uma trasição e cor de fundo*/
 
 nav ul li a:hover{
@@ -51,27 +51,27 @@ nav ul li a:hover{
 
 
 .descricao{
-    padding: 50px;
+    padding: 3.125rem;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: rgb(4, 10, 34);
-    border-radius: 30px;
+    border-radius: 1.875rem;
     transition: 0.7s;
     background-color: rgb(254, 254, 254);
     text-align: center;
-    margin: 100px;
+    margin: 6.25rem;
 }/*espaço entre esse elemento e outro, retirando decorações de texto, tamanho da fonte, cor da fonte, arredondando a borda, transição,
 cor de fundo, alinhamento de texto, margem*/
 
 .portfolio a {
     display: flex;
     justify-content: center;
-    padding: 80px;
-    margin: 80px;
+    padding: 5rem;
+    margin: 5rem;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: rgb(4, 10, 34);
-    border-radius: 30px;
+    border-radius: 1.875rem;
     transition: 0.7s;
     background-color: rgb(254, 254, 254);
 }/*segue o mesmo reciocínio do mmenu*/
@@ -83,34 +83,34 @@ cor de fundo, alinhamento de texto, margem*/
 
 form {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.125rem 0.313rem rgba(0, 0, 0, 0.3);
 }
 /*cor de fundo do formulário, distancia entre esse elemento e outro, curvatura da borda e sombra da caixa*/
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.313rem;
     font-weight: bold;
     color: #000000;
 }/*formato de display em block para o label do formulário, tamanho da margem na parte inferior, negrito e cor*/
 
 input, textarea {
     width: 100%;
-    padding: 7px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 0.438rem;
+    margin-bottom: 0.938rem;
+    border: 0.063rem solid #ccc;
+    border-radius: 0.313rem;
 }/*largura, distancia entre esses elementos e outros, margem inferior, tamanho da borda, 
 tipo e cor e curvatura da borda para os inputs e área de texto*/
 
 button {
     background-color: rgb(175, 79, 177); 
     color: #fff;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     cursor: pointer;
 }/*cor de fundo do botão, cor da fonte, distancia entre esse elemento e outro top/bottom e left/right, 
 sem borda, curvatura da borda e seta vira mãozinha ao passar pelo botão*/
@@ -119,3 +119,20 @@ button:hover {
     background-color: rgb(147, 16, 168);
 }
 /*cor do botão ao passar com o cursor do mouse por cima*/
+
+
+/* Media query para telas com largura máxima de 768px*/
+@media (max-width: 768px) {
+    body {
+      background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    }
+  
+    nav ul {
+      flex-direction: column; /* Muda a direção dos itens do menu para coluna */
+    }
+  
+    .descricao, .portfolio a {
+      padding: 20px;
+      margin: 10px;  /*Reduz o padding e a margem para telas menores */
+    }
+  }
