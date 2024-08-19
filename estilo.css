@@ -63,10 +63,6 @@ nav ul li a:hover{
 }/*espaço entre esse elemento e outro, retirando decorações de texto, tamanho da fonte, cor da fonte, arredondando a borda, transição,
 cor de fundo, alinhamento de texto, margem*/
 
-.contato ul li{
-    list-style: none;
-}/*retirando marcador de lista*/
-
 .portfolio a {
     display: flex;
     justify-content: center;
@@ -85,12 +81,41 @@ cor de fundo, alinhamento de texto, margem*/
     color: white;
 }
 
-form table{
-    display: flex;
-    justify-content: center;
-}/*centralizando o formulário*/
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+/*cor de fundo do formulário, distancia entre esse elemento e outro, curvatura da borda e sombra da caixa*/
 
-form table th{
-    font-size: 20px;
-}/*tamanho da fonte*/
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000;
+}/*formato de display em block para o label do formulário, tamanho da margem na parte inferior, negrito e cor*/
 
+input, textarea {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}/*largura, distancia entre esses elementos e outros, margem inferior, tamanho da borda, 
+tipo e cor e curvatura da borda para os inputs e área de texto*/
+
+button {
+    background-color: rgb(175, 79, 177); 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}/*cor de fundo do botão, cor da fonte, distancia entre esse elemento e outro top/bottom e left/right, 
+sem borda, curvatura da borda e seta vira mãozinha ao passar pelo botão*/
+
+button:hover {
+    background-color: rgb(147, 16, 168);
+}
+/*cor do botão ao passar com o cursor do mouse por cima*/
